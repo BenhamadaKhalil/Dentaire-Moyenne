@@ -12,7 +12,12 @@ export function calcNote(mod: Module, g: Grades): number | null {
       return (vp * 2 + (v1 + v2) / 2) / 3;
     }
     case "td": {
-      if (isNaN(v1) || isNaN(v2) || isNaN(vp)) return null;
+      if (isNaN(v1) || isNaN(vp)) return null;
+  // If second control missing, use simple average of TD and single control
+  if (isNaN(v2)) {
+    return (vp + v1) / 2;
+  }
+  return (vp + (v1 + v2) / 2) / 2;
       return (vp + (v1 + v2) / 2) / 2;
     }
     case "ctrl3": {
@@ -41,6 +46,9 @@ export function formulaLabel(mod: Module, g: Grades): string {
     case "tp":
       return `(${f(vp)}×2 + (${f(v1)}+${f(v2)})/2) / 3`;
     case "td":
+      if (isNaN(v2)) {
+        return `(${f(vp)} + ${f(v1)}) / 2`;
+      }
       return `(${f(vp)} + (${f(v1)}+${f(v2)})/2) / 2`;
     case "ctrl3":
       return `(${f(v1)} + ${f(v2)} + ${f(v3)}) / 3`;
