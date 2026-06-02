@@ -4,7 +4,7 @@ export const MODULES: Module[] = [
   // TP modules: (TP*2 + (C1+C2)/2) / 3
   { id: "prothese",  name: "Prothèse",     coef: 5, type: "tp" },
   { id: "oce",       name: "OC/E",         coef: 5, type: "tp" },
-  { id: "anadent",   name: "Ana-Dent",     coef: 1, type: "tp" },
+  { id: "anadent",   name: "Ana-Dent",     coef: 3, type: "tp" },
 
   // TD modules: (TD + (C1+C2)/2) / 2
   { id: "paro",      name: "Paro",         coef: 3, type: "td" },
@@ -20,7 +20,7 @@ export const MODULES: Module[] = [
   { id: "info",      name: "Info",         coef: 1, type: "tp" },
 
   // 1 contrôle only: C1
-  { id: "histo",     name: "Histo",        coef: 3, type: "ctrl1" },
+  { id: "histo",     name: "Histo",        coef: 2, type: "ctrl1" },
   { id: "physio",    name: "Physio",       coef: 1, type: "ctrl1" },
   { id: "immuno",    name: "Immuno",       coef: 1, type: "ctrl1" },
   { id: "hygiene",   name: "Hygiène",      coef: 1, type: "ctrl1" },
