@@ -1,7 +1,4 @@
 <div align="center">
-
-![Banner](docs/images/banner.png)
-
 <h1>🦷 Dentaire Moyenne</h1>
 
 <p><strong>Calculateur de notes pondérées — 2ème Année Médecine Dentaire (Algérie)</strong></p>
