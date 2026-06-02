@@ -59,13 +59,13 @@ export default function ModuleCard({ mod, grades, onChange }: Props) {
         />
 
         {/* C2 — all except ctrl1 */}
-        {mod.type !== "ctrl1" && (
-          <GradeInput
-            value={grades.c2}
-            onChange={(v) => onChange("c2", v)}
-            label="Ctrl 2"
-          />
-        )}
+        {mod.type !== "ctrl1" && mod.id !== "paro" && mod.id !== "patho" && (
+            <GradeInput
+              value={grades.c2}
+              onChange={(v) => onChange("c2", v)}
+              label="Ctrl 2"
+            />
+          )}
 
         {/* C3 — only ctrl3 (Biomatériaux) */}
         {mod.type === "ctrl3" && (
