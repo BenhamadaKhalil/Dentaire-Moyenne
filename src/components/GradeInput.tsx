@@ -20,11 +20,7 @@ export default function GradeInput({ value, onChange, label, labelColor = "text-
         value={value}
         onChange={(e) => onChange(e.target.value)}
         placeholder="—"
-        className={`w-full text-center rounded-lg border px-1 py-2 text-sm font-semibold focus:outline-none focus:ring-2 transition-all
-          ${valid
-            ? "border-slate-200 bg-white text-slate-800 focus:ring-slate-300 focus:border-slate-400"
-            : "border-red-300 bg-red-50 text-red-600 focus:ring-red-200"
-          }`}
+        className={`w-full appearance-none text-center rounded-lg border px-1 py-2 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-slate-300 hover:border-slate-300 transition-all shadow-sm ${valid ? "border-slate-300 bg-white text-slate-800 focus:border-slate-500" : "border-red-300 bg-red-50 text-red-600 focus:border-red-500"}`}
       />
     </div>
   );
