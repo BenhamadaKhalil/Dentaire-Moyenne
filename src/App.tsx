@@ -84,7 +84,7 @@ export default function App() {
               🦷 Bulletin 2ème Année
             </h1>
             <p className="text-slate-400 text-sm mt-1">
-              Faculté de Médecine Dentaire — Calculateur de notes pondérées
+              Faculté de Médecine Dentaire — Calculateur de moyenne générale
             </p>
           </div>
 
