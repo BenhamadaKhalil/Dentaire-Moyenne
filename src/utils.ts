@@ -13,11 +13,11 @@ export function calcNote(mod: Module, g: Grades): number | null {
     }
     case "td": {
       if (isNaN(v1) || isNaN(vp)) return null;
-  // If second control missing, use simple average of TD and single control
-  if (isNaN(v2)) {
-    return (vp + v1) / 2;
-  }
-  return (vp + (v1 + v2) / 2) / 2;
+      // If second control missing, use simple average of TD and single control
+      if (isNaN(v2)) {
+        return (vp + v1) / 2;
+      }
+      return (vp + (v1 + v2) / 2) / 2;
       return (vp + (v1 + v2) / 2) / 2;
     }
     case "ctrl3": {

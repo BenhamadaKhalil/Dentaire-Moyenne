@@ -7,8 +7,8 @@ export const MODULES: Module[] = [
   { id: "anadent",   name: "Ana-Dent",     coef: 1, type: "tp" },
 
   // TD modules: (TD + (C1+C2)/2) / 2
-  { id: "paro",      name: "Paro",         coef: 3, type: "ctrl1" },
-  { id: "patho",     name: "Patho",        coef: 3, type: "ctrl1" },
+  { id: "paro",      name: "Paro",         coef: 3, type: "td" },
+  { id: "patho",     name: "Patho",        coef: 3, type: "td" },
 
   // 3 contrôles only: (C1+C2+C3) / 3
   { id: "biomater",  name: "Biomatériaux", coef: 2, type: "ctrl3" },

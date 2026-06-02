@@ -48,6 +48,8 @@ export default function ModuleCard({ mod, grades, onChange }: Props) {
             ? "grid-cols-1"
             : mod.type === "ctrl2"
             ? "grid-cols-2"
+            : mod.id === "paro" || mod.id === "patho"
+            ? "grid-cols-2"
             : "grid-cols-3"
         }`}
       >
@@ -56,16 +58,18 @@ export default function ModuleCard({ mod, grades, onChange }: Props) {
           value={grades.c1}
           onChange={(v) => onChange("c1", v)}
           label="Ctrl 1"
+          inputClass={undefined}
         />
 
         {/* C2 — all except ctrl1 */}
         {mod.type !== "ctrl1" && mod.id !== "paro" && mod.id !== "patho" && (
-            <GradeInput
-              value={grades.c2}
-              onChange={(v) => onChange("c2", v)}
-              label="Ctrl 2"
-            />
-          )}
+          <GradeInput
+            value={grades.c2}
+            onChange={(v) => onChange("c2", v)}
+            label="Ctrl 2"
+            inputClass={undefined}
+          />
+        )}
 
         {/* C3 — only ctrl3 (Biomatériaux) */}
         {mod.type === "ctrl3" && (
@@ -73,6 +77,7 @@ export default function ModuleCard({ mod, grades, onChange }: Props) {
             value={grades.c3}
             onChange={(v) => onChange("c3", v)}
             label="Ctrl 3"
+            inputClass={undefined}
           />
         )}
 
@@ -83,6 +88,7 @@ export default function ModuleCard({ mod, grades, onChange }: Props) {
             onChange={(v) => onChange("practical", v)}
             label={cfg.label}
             labelColor={cfg.labelColor}
+            inputClass={undefined}
           />
         )}
       </div>
