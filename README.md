@@ -66,20 +66,20 @@ Moyenne = Σ(note_module × coef_module) / Σ(coef_modules_renseignés)
 | Prothèse | 5 | TP |
 | OC/E | 5 | TP |
 | Ana-Dent | 1 | TP |
-| Paro | 3 | TD |
-| Patho | 3 | TD |
+| Paro | 3 | 1 Ctrl |
+| Patho | 3 | 1 Ctrl |
 | Biomatériaux | 2 | 3 Ctrl |
 | ODF | 3 | 2 Ctrl |
 | Anato-Hum | 4 | 2 Ctrl |
 | Micro-Bio | 2 | 2 Ctrl |
-| Info | 1 | 2 Ctrl |
+| Info | 1 | TP |
 | Histo | 3 | 1 Ctrl |
-| Physio | 2 | 1 Ctrl |
+| Physio | 1 | 1 Ctrl |
 | Immuno | 1 | 1 Ctrl |
 | Hygiène | 1 | 1 Ctrl |
 | Anglais | 1 | 1 Ctrl |
 
-**Total coefficients : 38**
+**Total coefficients : 37**
 
 </details>
 
